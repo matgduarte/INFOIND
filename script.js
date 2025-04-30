@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===== COUNTDOWN TIMER =====
     function initCountdown() {
       // Event date - May 26, 2025
-      const eventDate = new Date('May 26, 2025 08:00:00').getTime();
+      const eventDate = new Date('May 03, 2025 08:00:00').getTime();
       
       // Update countdown every second (using more efficient setInterval)
       const countdownTimer = setInterval(() => {
