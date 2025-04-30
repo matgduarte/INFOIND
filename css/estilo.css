@@ -182,7 +182,7 @@
     position: relative;
   }
   
-  .nav-link::after {
+  .btn-nav::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -193,8 +193,18 @@
     transition: var(--transition);
   }
   
-  .nav-link:hover::after,
-  .nav-link.active::after {
+  .btn-primary::after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+  }
+  
+  .btn-nav:hover::after,
+  .btn-nav.active::after {
     width: 100%;
   }
   
@@ -203,6 +213,10 @@
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--primary-dark);
+  }
+
+  #home .container{
+    padding-bottom: 20em;
   }
   
   /* ===== HERO SECTION ===== */
@@ -215,6 +229,7 @@
     position: relative;
     padding-top: var(--header-height);
     overflow: hidden;
+    padding-bottom: 0px;
   }
   
   .hero .container {
@@ -269,7 +284,7 @@
   
   .hero-wave {
     position: absolute;
-    bottom: -2px;
+    bottom: -10px;
     left: 0;
     width: 100%;
     z-index: 1;
@@ -279,6 +294,8 @@
   .destaques {
     background-color: var(--white);
     padding: 80px 0;
+    margin-top: -150px;
+    z-index: 2;
   }
   
   .destaque-grid {
@@ -344,14 +361,14 @@
   
   .section-wave {
     position: absolute;
-    bottom: -2px;
+    bottom: -10px;
     left: 0;
     width: 100%;
     z-index: 1;
   }
   
   .section-wave.inverted {
-    top: -2px;
+    top: -10px;
     bottom: auto;
     transform: rotate(180deg);
   }
@@ -360,6 +377,7 @@
   .cronograma {
     background-color: var(--white);
     position: relative;
+    padding-bottom: 300px;
   }
   
   .schedule-tabs {
@@ -610,6 +628,7 @@
     color: var(--white);
     text-align: center;
     padding: 80px 0;
+    padding-top: 15em;
     position: relative;
   }
   
@@ -944,8 +963,16 @@
     }
     
     .local-detail {
-      justify-content: center;
+      justify-content: flex-start;
       text-align: left;
+    }
+
+    .contador {
+        padding-top: 10em;
+      }
+
+    #home .container {
+        padding-bottom: 17em;
     }
     
     .btn-outline {
@@ -1002,6 +1029,14 @@
     .tab-btn.active {
       box-shadow: 0 -2px 0 var(--primary-color);
     }
+
+    .contador {
+        padding-top: 7em;
+      }
+
+    #home .container {
+        padding-bottom: 15em;
+    }
   }
   
   @media (max-width: 576px) {
@@ -1057,5 +1092,13 @@
     .footer-logo {
       flex-direction: column;
       align-items: flex-start;
+    }
+
+    .contador {
+        padding-top: 5em;
+      }
+
+    #home .container {
+        padding-bottom: 10em;
     }
   }
