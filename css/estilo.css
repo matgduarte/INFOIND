@@ -549,6 +549,10 @@
     height: 270px;
     overflow: hidden;
   }
+
+  .f-azul{
+      background-color: #45789c;
+  }
   
   .speaker-photo img {
     width: 100%;
