@@ -273,7 +273,6 @@
   
   .hero-image img {
     border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     transform: perspective(1000px) rotateY(-10deg);
     transition: var(--transition);
   }
